@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивное меню</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d70cc4a9aa.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/script2.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <header class="header">
+            <div class="header__logo">
+                <a href="#"><img src="/img/logo.png" alt=""></a>
+            </div>
+            <div class="header__menu">
+                <ul class="header__list">
+                    <li class="header__link"><a href="#">Главная</a></li>
+                    <li class="header__link"><a href="#">Игры</a></li>
+                    <li class="header__link"><a href="#">Моды</a></li>
+                    <li class="header__link"><a href="#">Топ</a></li>
+                </ul>
+            </div>
+            <div class="header__form-block">
+                <form class="header__form-block_search">
+                    <input type="text" placeholder="Поиск по сайту...">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <div class="header__burger_content">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <nav class="left-sidebar">
+            <div class="left-sidebar__nav">
+                <div class="left-sidebar__title">
+                    <h3>Категории игр<i class="arrow"></i></h3>
+                </div>
+                <div class="left-sidebar__list no-hover">
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Аркады</span></div>
+                        <div class="left-sidebar__number"><span>58</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Файтинги</span></div>
+                        <div class="left-sidebar__number"><span>153</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Стратегии</span></div>
+                        <div class="left-sidebar__number"><span>124</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Симуляторы</span></div>
+                        <div class="left-sidebar__number"><span>187</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Головоломки</span></div>
+                        <div class="left-sidebar__number"><span>64</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Рогалики</span></div>
+                        <div class="left-sidebar__number"><span>168</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Визуальные новеллы</span></div>
+                        <div class="left-sidebar__number"><span>119</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Платформеры</span></div>
+                        <div class="left-sidebar__number"><span>57</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Гонки</span></div>
+                        <div class="left-sidebar__number"><span>83</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Экшены</span></div>
+                        <div class="left-sidebar__number"><span>127</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Текстовые</span></div>
+                        <div class="left-sidebar__number"><span>157</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Приключения</span></div>
+                        <div class="left-sidebar__number"><span>95</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Шутеры</span></div>
+                        <div class="left-sidebar__number"><span>57</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Песочницы</span></div>
+                        <div class="left-sidebar__number"><span>83</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Башенная защита</span></div>
+                        <div class="left-sidebar__number"><span>127</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Карточные</span></div>
+                        <div class="left-sidebar__number"><span>157</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Сетевые</span></div>
+                        <div class="left-sidebar__number"><span>95</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Хорроры</span></div>
+                        <div class="left-sidebar__number"><span>57</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Градостроительные</span></div>
+                        <div class="left-sidebar__number"><span>83</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Башенная защита</span></div>
+                        <div class="left-sidebar__number"><span>127</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Игры с физикой</span></div>
+                        <div class="left-sidebar__number"><span>157</span></div>
+                    </a>
+                    <a href="#" class="left-sidebar__items">
+                        <div class="left-sidebar__category"><span>Спортивные</span></div>
+                        <div class="left-sidebar__number"><span>95</span></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <main class="main">
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/1.jpg" alt=""></a></div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                    <p>Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы
+                        указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах. Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы
+                        указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                                <div class="main__date"><span><i class="fa-solid fa-calendar-days"></i>01.01.2022</span></div>
+                                <div class="main__type game"><span><i class="fa-solid fa-list"></i>Игра</span></div>
+                                <div class="main__view"><span><i class="fa-solid fa-eye"></i>56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/2.jpg" alt=""></a>
+                    </div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type mod"><span>Тип: Мод</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/3.jpg" alt=""></a>
+                    </div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type game"><span>Тип: Игра</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/4.jpg" alt=""></a>
+                    </div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type game"><span>Тип: Игра</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/5.jpg" alt=""></a>
+                    </div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type mod"><span>Тип: Мод</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/6.jpg" alt=""></a>
+                    </div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type game"><span>Тип: Игра</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/7.jpg" alt=""></a>
+                    </div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type mod"><span>Тип: Мод</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/8.jpg" alt=""></a>
+                    </div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type mod"><span>Тип: Мод</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/9.jpg" alt=""></a>
+                    </div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type game"><span>Тип: Игра</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/10.jpg" alt=""></a>
+                    </div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type game"><span>Тип: Игра</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/1.jpg" alt=""></a></div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                    <p>Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы
+                        указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах. Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы
+                        указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type game"><span>Тип: Игра</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/2.jpg" alt=""></a>
+                    </div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type mod"><span>Тип: Мод</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/3.jpg" alt=""></a>
+                    </div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type game"><span>Тип: Игра</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <article class="main__article">
+                <div class="main__title">
+                    <a href="#">В этом примере мы разместили два блочных grid-контейнера</a>
+                </div>
+                <div class="main__text">
+                    <div class="main__img"><a href="#"><img class="main__image" src="img/4.jpg" alt=""></a>
+                    </div>
+                    <p>Item 1
+                        Для первого и второго grid-контейнера с помощью свойства grid-template-columns мы указываем два
+                        значения, которые определяют, что мы размещаем два столбца (дорожки), используя допустимое
+                        значение
+                        в процентах.</p>
+                </div>
+                <div class="main__info">
+                    <div class="main__info_content">
+                        <div class="main__date_view">
+                            <div class="main__date"><span>Дата: 01.01.2022</span></div>
+                            <div class="main__type game"><span>Тип: Игра</span></div>
+                            <div class="main__view"><span>Просмотров: 56265</span></div>
+                        </div>
+                        <div class="main__download"><span><a href="#">Подробнее</a></span></div>
+                    </div>
+                </div>
+            </article>
+            <div class="horizontal-nav">
+                <div class="horizontal-nav__pages">
+                    <div class="horizontal-nav__list">
+                        <a href="#" class="horizontal-nav__page-numbers prev">
+                            <span class="icon-prev fa-solid fa-angle-left"></span>
+                        </a>
+                        <a href="#">1</a>
+                        <a href="#" class="horizontal-nav__page_current">2</a>
+                        <a href="#">3</a>
+                        <span class="dots">...</span>
+                        <a href="#">5984</a>
+                        <a href="#" class="horizontal-nav__page-numbers next">
+                            <span class="icon-next fa-solid fa-angle-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <nav class="right-sidebar">
+            <div class="right-sidebar__recommend">
+                <div class="recommend__title">
+                    <h3>Рекомендованная игра</h3>
+                </div>
+                <div class="recommend__block">
+                    <div class="recommend__content">
+                        <div class="recommend__img">
+                            <a href="#">
+                                <img src="img/11.jpg" alt="" class="recommend__image">
+                            </a>
+                        </div>
+                        <div class="recommend__name"><a href="#">
+                                Command & Conquer: Generals
+                            </a></div>
+                        <!-- <div class="recommend__name">
+                                <a href="#">Command & Conquer: Generals</a>
+                            </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="right-sidebar__top">
+                <div class="right-sidebar__top_title">
+                    <h3>Игровой топ месяца</h3>
+                </div>
+                <div class="right-sidebar__top_list">
+                    <a href="#" class="right-sidebar__top_items top10">
+                        <div class="right-sidebar__top_number"><span>1.</span></div>
+                        <div class="right-sidebar__top_name"><span>Football Manager 2014</span></div>
+                    </a>
+                    <a href="#" class="right-sidebar__top_items top10">
+                        <div class="right-sidebar__top_number"><span>2.</span></div>
+                        <div class="right-sidebar__top_name"><span>FlatOut 2</span></div>
+                    </a>
+                    <a href="#" class="right-sidebar__top_items top10">
+                        <div class="right-sidebar__top_number"><span>3.</span></div>
+                        <div class="right-sidebar__top_name"><span>Divinity Original Sin 2</span></div>
+                    </a>
+                    <a href="#" class="right-sidebar__top_items top10">
+                        <div class="right-sidebar__top_number"><span>4.</span></div>
+                        <div class="right-sidebar__top_name"><span>Battle Brother</span></div>
+                    </a>
+                    <a href="#" class="right-sidebar__top_items top10">
+                        <div class="right-sidebar__top_number"><span>5.</span></div>
+                        <div class="right-sidebar__top_name"><span>Rimworld</span></div>
+                    </a>
+                    <a href="#" class="right-sidebar__top_items top10">
+                        <div class="right-sidebar__top_number"><span>6.</span></div>
+                        <div class="right-sidebar__top_name"><span>Disciples II: Dark Prophecy</span></div>
+                    </a>
+                    <a href="#" class="right-sidebar__top_items top10">
+                        <div class="right-sidebar__top_number"><span>7.</span></div>
+                        <div class="right-sidebar__top_name"><span>The Witcher 3: Wild Hunt</span></div>
+                    </a>
+                    <a href="#" class="right-sidebar__top_items top10">
+                        <div class="right-sidebar__top_number"><span>8.</span></div>
+                        <div class="right-sidebar__top_name"><span>Cossacks: Back to War</span></div>
+                    </a>
+                    <a href="#" class="right-sidebar__top_items top10">
+                        <div class="right-sidebar__top_number"><span>9.</span></div>
+                        <div class="right-sidebar__top_name"><span>Stronghold: Crusader</span></div>
+                    </a>
+                    <a href="#" class="right-sidebar__top_items top10">
+                        <div class="right-sidebar__top_number"><span>10.</span></div>
+                        <div class="right-sidebar__top_name"><span>Age of Empires</span></div>
+                    </a>
+
+
+
+                    <div class="right-sidebar__top100">
+                        <div class="right-sidebar__top100_more">
+                            <span class="right-sidebar__top100_button">Показать топ 100</span>
+                        </div>
+                        <div class="right-sidebar__top100_list">
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>11.</span></div>
+                                <div class="right-sidebar__top_name"><span>Football Manager 2014</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>12.</span></div>
+                                <div class="right-sidebar__top_name"><span>FlatOut 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>13.</span></div>
+                                <div class="right-sidebar__top_name"><span>Divinity Original Sin 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>14.</span></div>
+                                <div class="right-sidebar__top_name"><span>Battle Brother</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>15.</span></div>
+                                <div class="right-sidebar__top_name"><span>Rimworld</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>16.</span></div>
+                                <div class="right-sidebar__top_name"><span>Disciples II: Dark Prophecy</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>17.</span></div>
+                                <div class="right-sidebar__top_name"><span>The Witcher 3: Wild Hunt</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>18.</span></div>
+                                <div class="right-sidebar__top_name"><span>Cossacks: Back to War</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>19.</span></div>
+                                <div class="right-sidebar__top_name"><span>Stronghold: Crusader</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>20.</span></div>
+                                <div class="right-sidebar__top_name"><span>Age of Empires</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>21.</span></div>
+                                <div class="right-sidebar__top_name"><span>Football Manager 2014</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>22.</span></div>
+                                <div class="right-sidebar__top_name"><span>FlatOut 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>23.</span></div>
+                                <div class="right-sidebar__top_name"><span>Divinity Original Sin 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>24.</span></div>
+                                <div class="right-sidebar__top_name"><span>Battle Brother</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>25.</span></div>
+                                <div class="right-sidebar__top_name"><span>Rimworld</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>26.</span></div>
+                                <div class="right-sidebar__top_name"><span>Disciples II: Dark Prophecy</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>27.</span></div>
+                                <div class="right-sidebar__top_name"><span>The Witcher 3: Wild Hunt</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>28.</span></div>
+                                <div class="right-sidebar__top_name"><span>Cossacks: Back to War</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>29.</span></div>
+                                <div class="right-sidebar__top_name"><span>Stronghold: Crusader</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>30.</span></div>
+                                <div class="right-sidebar__top_name"><span>Age of Empires</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>31.</span></div>
+                                <div class="right-sidebar__top_name"><span>Football Manager 2014</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>32.</span></div>
+                                <div class="right-sidebar__top_name"><span>FlatOut 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>33.</span></div>
+                                <div class="right-sidebar__top_name"><span>Divinity Original Sin 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>34.</span></div>
+                                <div class="right-sidebar__top_name"><span>Battle Brother</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>35.</span></div>
+                                <div class="right-sidebar__top_name"><span>Rimworld</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>36.</span></div>
+                                <div class="right-sidebar__top_name"><span>Disciples II: Dark Prophecy</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>37.</span></div>
+                                <div class="right-sidebar__top_name"><span>The Witcher 3: Wild Hunt</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>38.</span></div>
+                                <div class="right-sidebar__top_name"><span>Cossacks: Back to War</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>39.</span></div>
+                                <div class="right-sidebar__top_name"><span>Stronghold: Crusader</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>40.</span></div>
+                                <div class="right-sidebar__top_name"><span>Age of Empires</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>41.</span></div>
+                                <div class="right-sidebar__top_name"><span>Football Manager 2014</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>42.</span></div>
+                                <div class="right-sidebar__top_name"><span>FlatOut 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>43.</span></div>
+                                <div class="right-sidebar__top_name"><span>Divinity Original Sin 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>44.</span></div>
+                                <div class="right-sidebar__top_name"><span>Battle Brother</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>45.</span></div>
+                                <div class="right-sidebar__top_name"><span>Rimworld</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>46.</span></div>
+                                <div class="right-sidebar__top_name"><span>Disciples II: Dark Prophecy</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>47.</span></div>
+                                <div class="right-sidebar__top_name"><span>The Witcher 3: Wild Hunt</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>48.</span></div>
+                                <div class="right-sidebar__top_name"><span>Cossacks: Back to War</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>49.</span></div>
+                                <div class="right-sidebar__top_name"><span>Stronghold: Crusader</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>50.</span></div>
+                                <div class="right-sidebar__top_name"><span>Age of Empires</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>61.</span></div>
+                                <div class="right-sidebar__top_name"><span>Football Manager 2014</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>62.</span></div>
+                                <div class="right-sidebar__top_name"><span>FlatOut 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>63.</span></div>
+                                <div class="right-sidebar__top_name"><span>Divinity Original Sin 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>64.</span></div>
+                                <div class="right-sidebar__top_name"><span>Battle Brother</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>65.</span></div>
+                                <div class="right-sidebar__top_name"><span>Rimworld</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>66.</span></div>
+                                <div class="right-sidebar__top_name"><span>Disciples II: Dark Prophecy</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>67.</span></div>
+                                <div class="right-sidebar__top_name"><span>The Witcher 3: Wild Hunt</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>68.</span></div>
+                                <div class="right-sidebar__top_name"><span>Cossacks: Back to War</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>69.</span></div>
+                                <div class="right-sidebar__top_name"><span>Stronghold: Crusader</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>70.</span></div>
+                                <div class="right-sidebar__top_name"><span>Age of Empires</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>71.</span></div>
+                                <div class="right-sidebar__top_name"><span>Football Manager 2014</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>72.</span></div>
+                                <div class="right-sidebar__top_name"><span>FlatOut 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>73.</span></div>
+                                <div class="right-sidebar__top_name"><span>Divinity Original Sin 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>74.</span></div>
+                                <div class="right-sidebar__top_name"><span>Battle Brother</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>75.</span></div>
+                                <div class="right-sidebar__top_name"><span>Rimworld</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>76.</span></div>
+                                <div class="right-sidebar__top_name"><span>Disciples II: Dark Prophecy</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>77.</span></div>
+                                <div class="right-sidebar__top_name"><span>The Witcher 3: Wild Hunt</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>78.</span></div>
+                                <div class="right-sidebar__top_name"><span>Cossacks: Back to War</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>79.</span></div>
+                                <div class="right-sidebar__top_name"><span>Stronghold: Crusader</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>80.</span></div>
+                                <div class="right-sidebar__top_name"><span>Age of Empires</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>81.</span></div>
+                                <div class="right-sidebar__top_name"><span>Football Manager 2014</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>82.</span></div>
+                                <div class="right-sidebar__top_name"><span>FlatOut 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>83.</span></div>
+                                <div class="right-sidebar__top_name"><span>Divinity Original Sin 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>84.</span></div>
+                                <div class="right-sidebar__top_name"><span>Battle Brother</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>85.</span></div>
+                                <div class="right-sidebar__top_name"><span>Rimworld</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>86.</span></div>
+                                <div class="right-sidebar__top_name"><span>Disciples II: Dark Prophecy</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>87.</span></div>
+                                <div class="right-sidebar__top_name"><span>The Witcher 3: Wild Hunt</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>88.</span></div>
+                                <div class="right-sidebar__top_name"><span>Cossacks: Back to War</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>89.</span></div>
+                                <div class="right-sidebar__top_name"><span>Stronghold: Crusader</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>90.</span></div>
+                                <div class="right-sidebar__top_name"><span>Age of Empires</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>91.</span></div>
+                                <div class="right-sidebar__top_name"><span>Football Manager 2014</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>92.</span></div>
+                                <div class="right-sidebar__top_name"><span>FlatOut 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>93.</span></div>
+                                <div class="right-sidebar__top_name"><span>Divinity Original Sin 2</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>94.</span></div>
+                                <div class="right-sidebar__top_name"><span>Battle Brother</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>95.</span></div>
+                                <div class="right-sidebar__top_name"><span>Rimworld</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>96.</span></div>
+                                <div class="right-sidebar__top_name"><span>Disciples II: Dark Prophecy</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>97.</span></div>
+                                <div class="right-sidebar__top_name"><span>The Witcher 3: Wild Hunt</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>98.</span></div>
+                                <div class="right-sidebar__top_name"><span>Cossacks: Back to War</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>99.</span></div>
+                                <div class="right-sidebar__top_name"><span>Stronghold: Crusader</span></div>
+                            </a>
+                            <a href="#" class="right-sidebar__top_items top100">
+                                <div class="right-sidebar__top_number"><span>100.</span></div>
+                                <div class="right-sidebar__top_name"><span>Age of Empires</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <footer class="footer">
+            <div class="date">2022</div>
+            <div class="copy">Copyright</div>
+        </footer>
+    </div>
+</body>
+
+</html>
