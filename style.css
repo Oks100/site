@@ -93,7 +93,6 @@ body {
 	flex: 1;
 	display: flex;
 	/*border: 1px solid black;*/
-	box-shadow: 0 0 0 1px black;
 }
 .header__link a {
 	display: flex;
@@ -105,19 +104,38 @@ body {
 	color: black;
 	font-size: 1em;
 	background-color: #fff;
+	box-shadow: 0 0 0 1px black;
 	background: -moz-linear-gradient(top, rgb(230, 230, 230) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230) 100%);
 	background: -webkit-linear-gradient(top, rgb(230, 230, 230) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230) 100%);
     background: linear-gradient(top, rgb(230, 230, 230) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230) 100%);
 	font-weight: 700;
 	letter-spacing: 1px;
+	position: relative;
+	z-index: 1;
 }
-.header__link a:hover {
+/*.header__link a:hover {
 	text-decoration: none;
 	background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
 	background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
 	background: linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
+}*/
+.header__link a:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
+	background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
+	background: linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
+	z-index: -1;
+	transition: opacity 0.3s linear;
+	opacity: 0;
 }
-
+.header__link a:hover:before {
+	opacity: 1;
+}
 .header__form-block {
 	grid-column: 3 / 4;
 }
@@ -174,6 +192,7 @@ button:hover:before {
 	background: -moz-linear-gradient(left, rgb(230, 230, 230) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230) 100%);
 	background: -webkit-linear-gradient(left, rgb(230, 230, 230) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230) 100%);
     background: linear-gradient(left, rgb(230, 230, 230) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230) 100%);
+	pointer-events: none;
 }
 .left-sidebar__title h3::before {
 	content: "\f11b";
@@ -310,14 +329,22 @@ a.left-sidebar__items {
   .fa-solid.fa-calendar-days {
 	padding-right: 7px;
 	color: rgb(45, 45, 45);
+	font-size: 0.9em;
   }
   .fa-solid.fa-eye {
 	padding-right: 7px;
 	color: rgb(45, 45, 45);
+	font-size: 0.9em;
   }
   .fa-solid.fa-list {
 	padding-right: 7px;
 	color: rgb(45, 45, 45);
+	font-size: 0.9em;
+  }
+  .fa-regular.fa-puzzle {
+	padding-right: 7px;
+	color: rgb(45, 45, 45);
+	font-size: 0.9em;
   }
   .main__date {
     margin-right: 15px;
@@ -457,6 +484,25 @@ a.right-sidebar__top_items {
 	background: linear-gradient(left, rgb(230, 230, 230) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230) 100%);
 	cursor: pointer;
 	/*margin: 0 0 1px 0;*/
+	position: relative;
+	z-index: 1;
+}
+.right-sidebar__top100_more:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: -webkit-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
+	background: -moz-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
+	background: linear-gradient(left, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
+	z-index: -1;
+	transition: opacity 0.4s linear;
+	opacity: 0;
+}
+.right-sidebar__top100_more:hover::before {
+	opacity: 1;
 }
 .right-sidebar__top100_button {
 
@@ -629,14 +675,7 @@ a.right-sidebar__top_items {
     }
     .content {
     }
-    /*Запрет скроллить открытое меню*/
-    body.lock {
-        overflow: hidden;
-    }
-    /*Запрет скроллить открытое меню*/
-    .header__link {
-    }
-	.header__link {
+	.header__link a {
 		box-shadow: none;
 	}
 	.header__list li {
@@ -753,10 +792,10 @@ a.right-sidebar__top_items {
 		left: 0px;
 	}*/
 	.left-sidebar__items:nth-child(2n) {
-		background-color: rgb(237, 237, 237);
+		background-color: rgb(240, 240, 240);
 	}
 	.left-sidebar__list.no-hover a:hover:nth-child(2n) {
-		background: rgb(237, 237, 237);
+		background: rgb(240, 240, 240);
 	}
 	.left-sidebar__list.no-hover a:hover:nth-child(2n+1) {
 		background: none;
@@ -765,7 +804,7 @@ a.right-sidebar__top_items {
 		background: none;
 	}
 	a.right-sidebar__top_items:nth-child(2n) {
-		background: rgb(237, 237, 237);
+		background: rgb(240, 240, 240);
 	}
 	.horizontal-nav__pages {
 		border-left: none;
@@ -801,6 +840,11 @@ a.right-sidebar__top_items {
 	  }
 }
 @media (max-width: 501px) {
+/*Запрет скроллить открытое меню*/
+body.lock {
+	overflow: hidden;
+}
+/*Запрет скроллить открытое меню*/
 .header__menu {
 	position: fixed;
 	right: -100%;
