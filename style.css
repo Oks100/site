@@ -42,6 +42,11 @@ html {
 body {
 	color: black;
 }
+/*Запрет скроллить открытое меню*/
+body.lock {
+	overflow: hidden;
+}
+/*Запрет скроллить открытое меню*/
 .content {
 	display: grid;
 	grid-template: 
@@ -126,9 +131,9 @@ body {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
+	/*background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
 	background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
-	background: linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
+	background: linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);*/
 	z-index: -1;
 	transition: opacity 0.3s linear;
 	opacity: 0;
@@ -195,8 +200,8 @@ button:hover:before {
 	pointer-events: none;
 }
 .left-sidebar__title h3::before {
-	content: "\f11b";
-	font-family: FontAwesome;
+	content: "\e903";
+	font-family: 'icomoon';
 	padding-right: 10px;
 	font-size: 0.85em;
 }
@@ -358,6 +363,23 @@ a.left-sidebar__items {
 	margin-right: 15px;
     display: inline-block;
   }
+  .main__type.game span {
+  }
+  .main__type.game span::before {
+	content: '\e901';
+	font-family: 'icomoon', sans-serif;
+	color: rgb(45, 45, 45);
+	font-size: 0.9em;
+	padding-right: 7px;
+	padding-top: 5px;
+  }
+  .main__type.mod span::before {
+	content: "\e900";
+	font-family: 'icomoon', sans-serif;
+	color: rgb(45, 45, 45);
+	font-size: 0.9em;
+	padding-right: 7px;
+  }
   .main__download {
     grid-column: 2 / 3;
     padding-right: 10px;
@@ -404,6 +426,10 @@ a.left-sidebar__items {
   }
   .dots {
 	padding: 3px 7px;
+  }
+  .fa-angle-left::before,
+  .fa-angle-right::before {
+	vertical-align: middle;
   }
 @media (max-width: 500px) {
   .main__img {
@@ -687,9 +713,10 @@ a.right-sidebar__top_items {
 		font-size: 1.1em;
 	}
 	.header__link a:hover {
-		background: -moz-linear-gradient(left, rgba(230, 230, 230, 0) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230, 0) 100%);
+		/*background: -moz-linear-gradient(left, rgba(230, 230, 230, 0) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230, 0) 100%);
 		background: -webkit-linear-gradient(left, rgba(230, 230, 230, 0) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230, 0) 100%);
-		background: linear-gradient(left, rgba(230, 230, 230, 0) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230, 0) 100%);
+		background: linear-gradient(left, rgba(230, 230, 230, 0) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230, 0) 100%);*/
+		background: radial-gradient(rgba(255, 255, 255, 0.0), rgba(230, 230, 230));
 	}
 	.header__form-block {
 		background: -moz-linear-gradient(left, rgb(230, 230, 230) 0%, rgb(255, 255, 255) 50%, rgb(230, 230, 230) 100%);
@@ -840,11 +867,6 @@ a.right-sidebar__top_items {
 	  }
 }
 @media (max-width: 501px) {
-/*Запрет скроллить открытое меню*/
-body.lock {
-	overflow: hidden;
-}
-/*Запрет скроллить открытое меню*/
 .header__menu {
 	position: fixed;
 	right: -100%;
@@ -877,6 +899,18 @@ body.lock {
 	right: 0;
 }
 }
+
+@media (min-width: 993px) {
+.left-sidebar__title ~ .left-sidebar__list {
+	display: block !important;
+}
+.header__link a::before {
+	background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
+	background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
+	background: linear-gradient(top, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(255, 255, 255) 100%);
+}
+}
+
 @media (min-width: 501px) and (max-width: 992px) {
 		/*! Выезд меню сверху */
 	/*.header__menu {
