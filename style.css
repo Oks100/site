@@ -203,7 +203,7 @@ button:hover:before {
 	content: "\e903";
 	font-family: 'icomoon';
 	padding-right: 10px;
-	font-size: 0.85em;
+	font-size: 0.80em;
 }
 .left-sidebar__title {
 	pointer-events: none;
@@ -364,6 +364,12 @@ a.left-sidebar__items {
     display: inline-block;
   }
   .main__type.game span {
+	position: relative;
+	margin-left: 19px;
+  }
+  .main__type.mod span {
+	position: relative;
+	margin-left: 20px;
   }
   .main__type.game span::before {
 	content: '\e901';
@@ -372,13 +378,22 @@ a.left-sidebar__items {
 	font-size: 0.9em;
 	padding-right: 7px;
 	padding-top: 5px;
+	display: inline-block;
+	top: -7px;
+	position: absolute;
+	right: 31px;
   }
   .main__type.mod span::before {
 	content: "\e900";
 	font-family: 'icomoon', sans-serif;
 	color: rgb(45, 45, 45);
-	font-size: 0.9em;
+	font-size: 1em;
 	padding-right: 7px;
+	padding-top: 5px;
+	display: inline-block;
+	top: -8px;
+	position: absolute;
+	right: 28px;
   }
   .main__download {
     grid-column: 2 / 3;
@@ -638,6 +653,13 @@ a.right-sidebar__top_items {
 	.right-sidebar, .left-sidebar {
 		padding: 0;
 	}
+	.recommend__block {
+		border: none;
+		border-bottom: 1px solid black;
+		/*border-top: none;
+		border-right: none;
+		border-left: none;*/
+}
 	.header__form-block {
 	}
 	.header__burger_content {
@@ -735,12 +757,15 @@ a.right-sidebar__top_items {
 		background: -moz-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(235, 235, 235) 85%);
 		background: -webkit-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(235, 235, 235) 85%);
 		background: linear-gradient(left, rgb(255, 255, 255) 0%, rgb(235, 235, 235) 85%);
+		height: 43px;
 	}
 	button {
 		border: 1px solid #a6a6a6;
 		border-left: none;
 		border-bottom: none;
 		background: rgb(235, 235, 235);
+		width: 3.15em;
+		height: 3.15em;
 	  }
 	button:hover {
 		background: rgb(225, 225, 225);
@@ -956,8 +981,8 @@ a.right-sidebar__top_items {
         transition: all 0.3s ease 0s;
         overflow: auto;
 		top: 350px;
-		-webkit-box-shadow: -2px 3px 7px 0 rgba(0,0,0,0.2);
-		box-shadow: -2px 3px 7px 0 rgba(0,0,0,0.2);
+		-webkit-box-shadow: -2px 6px 7px 0 rgba(0,0,0,0.2);
+		box-shadow: -2px 6px 7px 0 rgba(0,0,0,0.2);
 }
 	.header__form-block.active {
 		right: 0;
@@ -972,10 +997,12 @@ a.right-sidebar__top_items {
 		padding-right: 10px;
 		font-size: 0.85em;
 }
-	.recommend__block {
+	/*.recommend__block {
 		border: 1px solid black;
 		border-top: none;
-}
+		border-right: none;
+		border-left: none;
+}*/
 	.recommend__content {
 		display: grid;
 		grid-template: 1fr / max-content 1fr;
