@@ -330,24 +330,40 @@ a.left-sidebar__items {
 	grid-template: minmax(0, auto) / minmax(0, auto) min-content;
 	font-size: 0.95em;
 }
-.main__info-additional {
+  .main__info-additional {
 	grid-column: 1 / 2;
 	padding-left: 10px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
   .main__added {
 	display: inline-block;
 	padding-right: 10px;
 }
-  .main__added span a, .main__genres span a, .main__edit a {
-	border-bottom: 1px solid #7e3030;
+  .main__added a, .main__genres a {
 	color: #7e3030;
+	border-bottom: 1px solid #7e3030;
 }
-  .main__added span a:hover, .main__genres span a:hover, .main__edit a:hover {
+  .main__edit a {
+	border-bottom: 1px solid black;
+}
+  .main__added a:hover, .main__genres a:hover, .main__edit a:hover {
 	border-bottom: none;
 }
   .main__genres {
-	display: inline-block;
+	/*display: inline-block;*/
 	padding-right: 10px;
+	color: rgba(0, 0, 0, 0.6);
+}
+  /*.main__genres a {
+	margin-right: 5px;
+}*/
+  .main__genre {
+	display: inline-block;
+	color: black;
 }
   .main__edit {
 	grid-column: 2 / 3;
@@ -1081,5 +1097,14 @@ a.right-sidebar__top_items {
 		background: -moz-linear-gradient(left, rgb(230, 230, 230) 0%, rgb(255, 255, 255) 100%);
 		background: -webkit-linear-gradient(left, rgb(230, 230, 230) 0%, rgb(255, 255, 255) 100%);
 		background: linear-gradient(left, rgb(230, 230, 230) 0%, rgb(255, 255, 255) 100%);
+}
+}
+@media (max-width: 380px) {
+.main__info-additional {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 }
