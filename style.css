@@ -206,7 +206,7 @@ button:hover:before {
 	content: "\e903";
 	font-family: 'icomoon';
 	padding-right: 10px;
-	font-size: 0.80em;
+	font-size: 0.75em;
 }
 .left-sidebar__title {
 	pointer-events: none;
@@ -426,27 +426,87 @@ a.left-sidebar__items {
 	position: relative;
 	margin-left: 20px;
   }
-  .main__type.game span::before {
-	content: '\e901';
+  /*.main__type.game span::before {
+	content: '\e914';
 	font-family: 'icomoon', sans-serif;
 	color: rgb(45, 45, 45);
 	font-size: 0.9em;
 	padding-right: 7px;
-	padding-top: 5px;
+	padding-top: 5.4px;
 	display: inline-block;
 	top: -7px;
 	position: absolute;
 	right: 31px;
-  }
-  .main__type.mod span::before {
-	content: "\e900";
+  }*/
+  /*.main__type.mod span::before {
+	content: "\e912";
 	font-family: 'icomoon', sans-serif;
 	color: rgb(45, 45, 45);
-	font-size: 1em;
+	font-size: 0.9em;
 	padding-right: 7px;
-	padding-top: 5px;
+	padding-top: 6px;
 	display: inline-block;
 	top: -8px;
+	position: absolute;
+	right: 28px;
+  }*/
+  .main__type.mod .work-in-progress::before {
+	content: "\e910";
+	font-family: 'icomoon', sans-serif;
+	color: rgb(45, 45, 45);
+	font-size: 0.9em;
+	padding-right: 7px;
+	padding-top: 6.5px;
+	display: inline-block;
+	top: -8px;
+	position: absolute;
+	right: 28px;
+  }
+  .main__type.mod .release::before {
+	content: "\e914";
+	font-family: 'icomoon', sans-serif;
+	color: rgb(45, 45, 45);
+	font-size: 0.9em;
+	padding-right: 7px;
+	padding-top: 6px;
+	display: inline-block;
+	top: -8px;
+	position: absolute;
+	right: 28px;
+  }
+  .main__type.game .release::before {
+	content: "\e914";
+	font-family: 'icomoon', sans-serif;
+	color: rgb(45, 45, 45);
+	font-size: 0.9em;
+	padding-right: 10px;
+	padding-top: 6px;
+	display: inline-block;
+	top: -8px;
+	position: absolute;
+	right: 28px;
+  }
+  .main__type.game .demo::before {
+	content: "\e912";
+	font-family: 'icomoon', sans-serif;
+	color: rgb(45, 45, 45);
+	font-size: 0.9em;
+	padding-right: 10px;
+	padding-top: 6.5px;
+	display: inline-block;
+	top: -8px;
+	position: absolute;
+	right: 28px;
+  }
+  .main__type.game .work-in-progress::before {
+	content: "\e910";
+	font-family: 'icomoon', sans-serif;
+	color: rgb(45, 45, 45);
+	font-size: 0.9em;
+	padding-right: 10px;
+	padding-top: 6px;
+	display: inline-block;
+	top: -7.5px;
 	position: absolute;
 	right: 28px;
   }
