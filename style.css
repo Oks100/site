@@ -487,8 +487,8 @@ a.left-sidebar__items {
 	/*padding-top: 6.5px;*/
 	position: absolute;
 	display: inline-block;
-	top: -1.5px;
-	right: 35px;
+	top: -0.105em;
+	right: 2.456em;
   }
   .main__type.mod .release::before {
 	content: "\e914";
@@ -499,8 +499,8 @@ a.left-sidebar__items {
 	/*padding-top: 6px;*/
 	position: absolute;
 	display: inline-block;
-	top: -2px;
-	right: 35px;
+	top: -0.140em;
+	right: 2.456em;
   }
   .main__type.game .release::before {
 	content: "\e914";
@@ -509,8 +509,8 @@ a.left-sidebar__items {
 	font-size: 0.9em;
 	position: absolute;
 	display: inline-block;
-	top: -2px;
-	right: 38px;
+	top: -0.140em;
+	right: 2.667em;
   }
   .main__type.game .demo::before {
 	content: "\e912";
@@ -521,8 +521,8 @@ a.left-sidebar__items {
 	/*padding-top: 6.5px;*/
 	position: absolute;
 	display: inline-block;
-	top: -1.5px;
-	right: 38px;
+	top: -0.105em;
+	right: 2.667em;
   }
   .main__type.game .work-in-progress::before {
 	content: "\e910";
@@ -533,8 +533,8 @@ a.left-sidebar__items {
 	/*padding-top: 6px;*/
 	position: absolute;
 	display: inline-block;
-	top: -1.5px;
-	right: 38px;
+	top: -0.105em;
+	right: 2.667em;
   }
   .main__download {
     grid-column: 2 / 3;
